@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project 2: Tic-Tac-Toe: Joker VS Batman!</title>
+
+	<!-- External CSS -->
+	<link href="css/tic_tac_toe.css" rel="stylesheet" type="text/css">
+
+	<!-- External JavaScript -->
+	<script src="js/tic_tac_toe.js"></script>
+</head>
+
+
+
+<body>
+	<div id="gui">
+		<header><img src="img/header.png"></header>
+
+		<main>
+			<div id="cell_0_0"><img src="img/placeholder.png"></div>
+			<div id="cell_0_1"><img src="img/placeholder.png"></div>
+			<div id="cell_0_2"><img src="img/placeholder.png"></div>
+			<div id="cell_1_0"><img src="img/placeholder.png"></div>
+			<div id="cell_1_1"><img src="img/placeholder.png"></div>
+			<div id="cell_1_2"><img src="img/placeholder.png"></div>  
+			<div id="cell_2_0"><img src="img/placeholder.png"></div>
+			<div id="cell_2_1"><img src="img/placeholder.png"></div>
+			<div id="cell_2_2"><img src="img/placeholder.png"></div>
+		</main>
+		
+		<footer>
+			<div><img src="img/jokers_turn.png"></div>
+
+			<div>
+				<div id="menu">
+					<button type="button" id="menu_btn">Menu</button>
+					<div id="menu_content">
+						<div id="game_settings"></div>
+						<button type="button" id="pause_btn">Pause</button>
+						<button type="button" id="restart_btn">Restart</button>
+					</div>
+				</div>
+				<div id="timer_container"></div>
+			</div>
+
+			<div><img src="img/batmans_turn.png"></div>
+		</footer>
+	
+
+
+		<div id="modal">
+		    <div id="modal_content">
+		    	<div id="startup_options_container">
+		    		
+					<div id="play_mode_container">
+						<h3>Play Mode:</h3>
+						<div><input type="radio" id="opt_pvp_btn" name="play_mode" value="pvp" checked><label for="opt_pvp_btn">Player vs Player</label></div>
+						<div><input type="radio" id="opt_pvc_btn" name="play_mode" value="pvc"><label for="opt_pvc_btn">Player vs Computer</label></div>
+					</div>
+
+					<div id="challenge_mode_container">
+						<h3>Challenge Mode:</h3>
+						<div><input type="radio" id="opt_challenge_false_btn" name="challenge_mode" value="false"><label for="opt_challenge_false_btn">Easy</label></div>
+						<div><input type="radio" id="opt_challenge_true_btn" name="challenge_mode" value="true" checked><label for="opt_challenge_true_btn">Uneasy</label></div>
+					</div>
+
+					<button type="button" id="play_now_btn">Play Now!</button>
+		    	</div>
+
+
+		    	<div id="pause_game_container">
+		    		<div></div>
+		    		<div></div>
+		    	</div>
+
+
+		    	<div id="game_over_container">
+		    		<div id="swirl_container">
+			    		<img id="joker_swirl" src="img/joker_swirl.png">
+			    		<img id="joker_pic" src="img/joker_pic.png">
+			    		<img id="batman_swirl" src="img/batman_swirl.png">
+			    		<img id="batman_pic" src="img/batman_pic.png">
+			    		<img id="catwoman_swirl" src="img/catwoman_swirl.png">
+			    		<img id="catwoman_pic" src="img/catwoman_pic.png">
+			    	</div>
+			    	
+			    	<h4>The winner is</h4>
+			    	<div id="winner_title_container"></div>
+
+			    	<h4>Results</h4>
+			    	<div id="game_results_container"></div>
+			    	<button type="button" id="play_again_btn">Play Again!</button>
+			    </div>
+
+
+		    </div>
+		</div>
+
+
+
+	</div>
+</body>
+
+
+
+</html>
